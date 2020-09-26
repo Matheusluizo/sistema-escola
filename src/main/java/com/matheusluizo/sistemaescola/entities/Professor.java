@@ -30,7 +30,7 @@ public class Professor implements Serializable {
 	private String especializacao;
 
 	@ManyToMany
-	@JoinTable(name = "tb_professor_turma", joinColumns = @JoinColumn(name = "professor_id"), inverseJoinColumns = @JoinColumn(name = "turma_id"))
+	@JoinTable(name = "tb_professor_turmas", joinColumns = @JoinColumn(name = "professor_id"), inverseJoinColumns = @JoinColumn(name = "turma_id"))
 	private Set<Turma> turmas = new HashSet<>();
 
 	public Professor() {
